@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "Neo Sans Arabic";
+  src: url("./assets/fonts/NeoSansArabic.woff") format("woff"),
+    url("./assets/fonts/NeoSansArabic.woff2") format("woff2");
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Neo Sans Arabic";
+  background-color: #f3f5f7;
+}

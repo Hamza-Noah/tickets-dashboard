@@ -1,0 +1,59 @@
+.ticket {
+  padding: 26px 0;
+  border-radius: 12px;
+  background-color: #8a74f9;
+  background-image: url("../../assets/imsges/background.svg");
+  h3 {
+    font-size: 0.875rem;
+    font-weight: bolder;
+    margin-bottom: 21px;
+  }
+
+  .separator {
+    position: relative;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: -5px;
+      border-radius: 50%;
+      background-color: #f3f5f7;
+      width: 40px;
+      height: 40px;
+    }
+
+    &::before {
+      transform: translate(50%);
+    }
+    &::after {
+      transform: translate(50%);
+    }
+  }
+
+  .discount-and-share{
+    padding-right: 27px;
+    .discount p{
+      margin-bottom: 8px;
+    }
+
+    .discount span{
+      display: block;
+      padding-bottom: 7px;
+    }
+  }
+
+  .share button{
+    padding: 5.5px 6px;
+    border: solid white 2px;
+    border-radius: 4px;
+    color: white;
+  }
+
+  .qr{
+    margin-left: 32px;
+  }
+}
+
+.fit-content {
+  width: fit-content;
+}
