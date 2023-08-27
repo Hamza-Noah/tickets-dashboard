@@ -1,3 +1,5 @@
+@import url(../src/assets/vendor/styles/normalize.css);
+
 @font-face {
   font-family: "Neo Sans Arabic";
   src: url("./assets/fonts/NeoSansArabic.woff") format("woff"),
@@ -13,4 +15,6 @@
 body {
   font-family: "Neo Sans Arabic";
   background-color: #f3f5f7;
+  padding-top: 85px;
+  padding-right: 122px;
 }

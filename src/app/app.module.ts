@@ -3,10 +3,11 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { StatisticsComponent } from './statistics/statistics.component';
+import { StatisticsComponent } from './statistics-use/statistics-use.component';
 import { TicketComponent } from './ticket/ticket.component';
 import { TicketsBarComponent } from './tickets-bar/tickets-bar.component';
 import { TicketsSoldComponent } from './tickets-sold/tickets-sold.component';
+import { TicketNumberComponent } from './ticket-number/ticket-number.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { TicketsSoldComponent } from './tickets-sold/tickets-sold.component';
     StatisticsComponent,
     TicketComponent,
     TicketsBarComponent,
-    TicketsSoldComponent
+    TicketsSoldComponent,
+    TicketNumberComponent
   ],
   imports: [
     BrowserModule,

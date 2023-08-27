@@ -3,8 +3,8 @@ import Chart from 'chart.js/auto';
 
 @Component({
   selector: 'app-statistics',
-  templateUrl: './statistics.component.html',
-  styleUrls: ['./statistics.component.scss']
+  templateUrl: './statistics-use.component.html',
+  styleUrls: ['./statistics-use.component.scss']
 })
 export class StatisticsComponent implements AfterViewInit {
   chart: any = [];
