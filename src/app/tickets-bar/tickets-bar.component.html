@@ -1,1 +1,17 @@
-<p>tickets-bar works!</p>
+<div class="tickets-bar d-flex">
+    <div class="d-flex flex-wrap align-items-center flex-grow-1">
+        <h2 class="mb-0">مبيعات التذاكر</h2>
+        <div class="search d-flex">
+            <input type="search" class="pe-4" placeholder="ابحث عن ...">
+            <button class="d-flex align-items-center"><img src="../../assets/icons/settings.svg" alt=""></button>
+            <button class="d-flex align-items-center"><img src="../../assets/icons/arrows.svg" alt=""></button>
+        </div>
+    </div>
+    <div class="d-flex align-items-center">
+        <div class="activated ms-3">
+        <p-inputSwitch [(ngModel)]="checked"></p-inputSwitch>
+            <label for="">مفعلة</label>
+        </div>
+        <a class="book-ticket text-white btn" href="#">حجز تذكرة جديدة</a>
+    </div>
+</div>

@@ -47,16 +47,16 @@ export class StatisticsComponent implements AfterViewInit {
           },
           scales: {
             x: {
-              display: false,
+              display: true,
               grid: {
                 display: false,
               },
             },
             y: {
               beginAtZero: true,
-              display: false,
+              display: true,
               grid: {
-                display: false,
+                display: true,
               },
               ticks: {
                 display: false,

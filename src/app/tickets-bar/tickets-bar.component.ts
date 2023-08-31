@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./tickets-bar.component.scss']
 })
 export class TicketsBarComponent {
-
+  checked: boolean = false;
 }

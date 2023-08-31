@@ -1,0 +1,56 @@
+.tickets-bar {
+  margin-top: 24px;
+
+  h2 {
+    font-size: 16px;
+  }
+
+  h2 {
+    margin-left: 10px;
+  }
+
+  input[type="search"],
+  .search button {
+    height: 36px;
+    border: solid 1px rgba(146, 161, 173, 0.4);
+    background-color: white;
+    padding: 10px;
+    margin-left: 7px;
+    border-radius: 7.5px;
+  }
+
+  ::-webkit-input-placeholder {
+    /* Edge */
+    color: rgba(146, 161, 173, 0.4);
+    font-size: 10px;
+  }
+
+  :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: rgba(146, 161, 173, 0.4);
+    font-size: 10px;
+  }
+
+  ::placeholder {
+    color: rgba(146, 161, 173, 0.4);
+    font-size: 10px;
+  }
+
+  .activated {
+    color: #9c9d9f;
+  }
+}
+
+.book-ticket {
+  background-color: #8a74f9;
+}
+
+:host::ng-deep {
+  .checkbox {
+    display: none !important;
+  }
+
+  .p-inputswitch.p-inputswitch-checked .p-inputswitch-slider {
+    background-color: #8a74f9 !important;
+  }
+}
