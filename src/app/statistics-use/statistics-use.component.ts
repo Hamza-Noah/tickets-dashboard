@@ -6,13 +6,14 @@ import Chart from 'chart.js/auto';
   templateUrl: './statistics-use.component.html',
   styleUrls: ['./statistics-use.component.scss']
 })
+
 export class StatisticsComponent implements AfterViewInit {
   chart: any = [];
 
   generateGradient(ctx: CanvasRenderingContext2D, canvas: HTMLCanvasElement) {
     const gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
     gradient.addColorStop(0, 'rgb(138, 116, 249)');
-    gradient.addColorStop(1, 'rgba(138, 116, 249, .5)');
+    gradient.addColorStop(1, 'rgba(138, 116, 249, .3)');
     return gradient;
   }
 
@@ -31,10 +32,10 @@ export class StatisticsComponent implements AfterViewInit {
             {
               label: '# of Votes',
               data: [12, 19, 3, 5, 2, 3, 7, 8, 10, 15, 9, 6],
-              borderWidth: 2,
+              borderWidth: 3,
               borderCapStyle: 'round',
               fill: true,
-              backgroundColor: gradient, // Use the generated gradient fill
+              backgroundColor: gradient,
               borderColor: '#8a74f9',
               cubicInterpolationMode: 'monotone',
               pointRadius: 0,
@@ -50,7 +51,8 @@ export class StatisticsComponent implements AfterViewInit {
               display: false,
               labels: {
                 font: {
-                  family: "'Neo Sans Arabic Regular'"
+                  weight: "bold",
+                  family: "'Neo Sans Arabic Regular'",
                 }
               }
             },

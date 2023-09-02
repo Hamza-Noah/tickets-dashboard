@@ -3,7 +3,21 @@
   padding: 19px 22px;
   border-radius: 8px;
   border: 0.807px solid #ebebeb;
-  
+
+  select {
+    padding: 10.5px 14.5px;
+    background-color: #e8e8e8;
+    border: #e8e8e8 solid 1px !important;
+    border-radius: 4px;
+  }
+
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: "";
+  }
+
   @media (min-width: 992px) {
     margin-bottom: 30px;
   }
