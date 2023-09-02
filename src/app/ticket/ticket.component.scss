@@ -3,14 +3,26 @@
   border-radius: 12px;
   background-color: #8a74f9;
   background-image: url("../../assets/imsges/background.svg");
+
   h3 {
     font-size: 0.875rem;
     font-weight: bolder;
     margin-bottom: 21px;
   }
 
+  .ticket-number {
+    a {
+      font-size: 0.813rem;
+    }
+
+    &+p {
+      font-size: .75rem !important;
+    }
+  }
+
   .separator {
     position: relative;
+
     &::before,
     &::after {
       content: "";
@@ -25,32 +37,46 @@
     &::before {
       transform: translate(50%);
     }
+
     &::after {
       transform: translate(50%);
     }
   }
 
-  .discount-and-share{
+  .discount-and-share {
     padding-right: 27px;
-    .discount p{
+    font-size: 12px;
+
+    .discount p {
       margin-bottom: 8px;
     }
 
-    .discount span{
+
+    .discount {
+      margin-left: 17px;
+
+    }
+
+
+
+    .discount span {
       display: block;
-      padding-bottom: 7px;
+      padding-bottom: 4px;
     }
   }
 
-  .share button{
-    padding: 5.5px 6px;
-    border: solid white 2px;
+  .share button {
+    padding: 4px 6px;
+    border: solid white 1px;
     border-radius: 4px;
     color: white;
   }
 
-  .qr{
+  .qr {
     margin-left: 32px;
+    img {
+      border-radius: 4px;
+    }
   }
 }
 

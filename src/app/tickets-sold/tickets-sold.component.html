@@ -1,1 +1,44 @@
-<p>tickets-sold works!</p>
+<div class="tickets-sold">
+    <p-table class="tickets-table" [value]="tickets" [tableStyle]="{ 'min-width': '50rem' }" >
+        <ng-template pTemplate="header">
+            <tr>
+                <th>#</th>
+                <th>المستخدم</th>
+                <th>رقم التذكرة</th>
+                <th>قيمة التذكرة</th>
+                <th>السينمات</th>
+                <th>عدد الأشخاص</th>
+                <th>عدد مرات الشراء</th>
+                <th>التذكرة</th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-ticket>
+            <tr>
+                <td class="ticket-count">{{ ticket.ticketCount }}</td>
+                <td>
+                    <div class="d-flex justify-content-center">
+
+                        <div class="img">
+                            {{ ticket.user.img }}
+                            <img [src]="ticket.user.img" alt="">
+                        </div>
+                        <div class="user-data">
+                            <p class="mb-0">
+                                {{ ticket.user.name }}
+                            </p>
+                            <p class="mb-0">
+                                {{ticket.user.phone}}
+                            </p>
+                        </div>
+                    </div>
+                </td>
+                <td>{{ ticket.ticketNumber }}</td>
+                <td>${{ ticket.ticketPrice }}</td>
+                <td>{{ ticket.cinema }}</td>
+                <td>{{ ticket.numberOfPeople }}</td>
+                <td>{{ ticket.numberOfPurchases }}</td>
+                <td>{{ ticket.ticket.type }}</td>
+            </tr>
+        </ng-template>
+    </p-table>
+</div>

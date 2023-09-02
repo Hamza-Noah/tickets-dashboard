@@ -1,8 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { InputSwitchModule } from 'primeng/inputswitch';
-import { FormsModule } from '@angular/forms';
+import { TableModule } from 'primeng/table';
+import { PaginatorModule } from 'primeng/paginator';
 
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { StatisticsComponent } from './statistics-use/statistics-use.component';
@@ -24,7 +26,9 @@ import { TicketNumberComponent } from './ticket-number/ticket-number.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    InputSwitchModule
+    InputSwitchModule,
+    TableModule,
+    PaginatorModule
   ],
   providers: [],
   bootstrap: [AppComponent]

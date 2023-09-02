@@ -32,17 +32,23 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     /* Edge */
     color: rgba(146, 161, 173, 0.4);
     font-size: 10px;
+    line-height: 14px;
+    vertical-align: middle;
   }
 
   :-ms-input-placeholder {
     /* Internet Explorer 10-11 */
     color: rgba(146, 161, 173, 0.4);
     font-size: 10px;
+    line-height: 14px;
+    vertical-align: middle;
   }
 
   ::placeholder {
     color: rgba(146, 161, 173, 0.4);
     font-size: 10px;
+    line-height: 14px;
+    vertical-align: middle;
   }
 
   .activated {

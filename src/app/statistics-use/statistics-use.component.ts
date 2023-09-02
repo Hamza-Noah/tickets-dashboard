@@ -43,6 +43,11 @@ export class StatisticsComponent implements AfterViewInit {
             },
             legend: {
               display: false,
+              labels: {
+                font: {
+                  family: "'Neo Sans Arabic Regular'"
+                }
+              }
             },
           },
           scales: {
@@ -60,6 +65,9 @@ export class StatisticsComponent implements AfterViewInit {
               },
               ticks: {
                 display: false,
+                // @ts-ignore
+                suggestedMax: 6,
+                stepSize: 6,  
               },
             },
           },
