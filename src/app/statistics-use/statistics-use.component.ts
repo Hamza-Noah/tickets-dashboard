@@ -9,14 +9,19 @@ import Chart from 'chart.js/auto';
 export class StatisticsComponent implements AfterViewInit {
   chart: any = [];
 
+  generateGradient(ctx: CanvasRenderingContext2D, canvas: HTMLCanvasElement) {
+    const gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
+    gradient.addColorStop(0, 'rgb(138, 116, 249)');
+    gradient.addColorStop(1, 'rgba(138, 116, 249, .5)');
+    return gradient;
+  }
+
   ngAfterViewInit() {
     const canvas = document.getElementById('canvas') as HTMLCanvasElement;
     const ctx = canvas.getContext('2d');
 
     if (ctx) {
-      const gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
-      gradient.addColorStop(0, 'rgba(0, 128, 255, 0.6)');
-      gradient.addColorStop(1, 'rgba(0, 128, 255, 0)');
+      const gradient = this.generateGradient(ctx, canvas);
 
       this.chart = new Chart(canvas, {
         type: 'line',
@@ -29,7 +34,7 @@ export class StatisticsComponent implements AfterViewInit {
               borderWidth: 2,
               borderCapStyle: 'round',
               fill: true,
-              backgroundColor: gradient, // Use the gradient fill
+              backgroundColor: gradient, // Use the generated gradient fill
               borderColor: '#8a74f9',
               cubicInterpolationMode: 'monotone',
               pointRadius: 0,
