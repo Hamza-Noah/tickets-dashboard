@@ -31,6 +31,19 @@
   .img img {
     border-radius: 50%;
   }
+
+  .no-img {
+    width: 30px;
+    height: 30px;
+
+    &.one {
+      background-color: #038cb7;
+    }
+
+    &.four {
+      background-color: #898e95;
+    }
+  }
 }
 
 :host::ng-deep {

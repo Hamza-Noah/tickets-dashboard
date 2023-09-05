@@ -12,6 +12,8 @@ interface ticket {
   ticket: object;
 }
 
+
+
 @Component({
   selector: 'app-tickets-sold',
   templateUrl: './tickets-sold.component.html',
@@ -23,7 +25,7 @@ export class TicketsSoldComponent {
   tickets: ticket[] = [
     {
       ticketCount: 1,
-      user: { img: "Ma", name: 'أحمد محمود', phone: "0123456789" },
+      user: {name: 'أحمد محمود', phone: "0123456789" },
       ticketNumber: 'C-101',  // Updated
       ticketPrice: 40,
       cinema: 'Cineplex',
