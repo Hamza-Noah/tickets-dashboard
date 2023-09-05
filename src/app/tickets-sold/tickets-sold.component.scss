@@ -67,4 +67,24 @@
   tbody tr:last-child td {
     border: none !important;
   }
+
+  .p-paginator.p-component{
+    flex-direction: row-reverse;
+    justify-content: start;
+
+  }
+
+  p-dropdown{
+    margin-left: auto !important;
+  }
+
+  .p-paginator .p-dropdown .p-dropdown-label {
+    padding-right: 10px;
+  }
+
+  input[type="text"],
+  .p-ripple.p-element.p-paginator-first.p-paginator-element.p-link.p-disabled,
+  .p-ripple.p-element.p-paginator-last.p-paginator-element.p-link {
+    display: none !important;
+  }
 }

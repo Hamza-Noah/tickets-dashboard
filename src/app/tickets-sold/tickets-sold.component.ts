@@ -21,6 +21,8 @@ interface ticket {
 })
 export class TicketsSoldComponent {
   imgSrc: string = "../../assets/images/";
+  // @ts-ignore
+  selectedRows: number;
 
   tickets: ticket[] = [
     {
@@ -28,7 +30,7 @@ export class TicketsSoldComponent {
       user: {name: 'أحمد محمود', phone: "0123456789" },
       ticketNumber: 'C-101',  // Updated
       ticketPrice: 40,
-      cinema: 'Cineplex',
+      cinema: 'سينما مصر , مول العرب , برج الأطنان , سرايا القبة ...',
       numberOfPeople: 1,
       numberOfPurchases: 'مرة واحدة',
       ticket: { type: 'Regular' },
@@ -38,7 +40,7 @@ export class TicketsSoldComponent {
       user: { img: "user-1.jpg", name: 'محمد الغريب', phone: "0123456789" },
       ticketNumber: 'C-102',  // Updated
       ticketPrice: 30,
-      cinema: 'AMC Theatres',
+      cinema: 'سينما مصر , مول العرب , برج الأطنان , سرايا القبة ...',
       numberOfPeople: 2,
       numberOfPurchases: 'مرة واحدة',
       ticket: { type: 'VIP' },
@@ -48,7 +50,7 @@ export class TicketsSoldComponent {
       user: { img: "user-2.jpg", name: 'محمد الغريب', phone: "0123456789" },
       ticketNumber: 'C-103',  // Updated
       ticketPrice: 45,
-      cinema: 'Regal Cinemas',
+      cinema: 'سينما مصر , مول العرب , برج الأطنان , سرايا القبة ...',
       numberOfPeople: 1,
       numberOfPurchases: 'مرة واحدة',
       ticket: { type: 'Matinee' },
@@ -58,12 +60,21 @@ export class TicketsSoldComponent {
       user: { name: 'محمد الغريب', phone: "0123456789" },
       ticketNumber: 'C-104',  // Updated
       ticketPrice: 54,
-      cinema: 'Regal Cinemas',
+      cinema: 'سينما مصر , مول العرب , برج الأطنان , سرايا القبة ...',
       numberOfPeople: 1,
       numberOfPurchases: 'مرة واحدة',
       ticket: { type: 'Matinee' },
     },
   ];
+
+
+  totalRecords: number = 100; // Replace with the actual total record count
+  first: number = 0;
+
+  onPageChange(event: any) {
+    this.first = event.first;
+    // Load data based on the new page
+  }
 
 }
 

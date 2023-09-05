@@ -42,5 +42,18 @@
         </ng-template>
 
     </p-table>
-    
+    <!-- my-list.component.html -->
+
+    <p-paginator [rows]="10" [totalRecords]="totalRecords" [first]="first" [rowsPerPageOptions]="[5,10,20]">
+        <ng-template pTemplate="rowsPerPageDropdown">
+          <div class="paginator-text-before">Rows per page:</div>
+          <p-dropdown [options]="[5, 10, 20]" [(ngModel)]="selectedRows" class="paginator-dropdown"></p-dropdown>
+          <div class="paginator-text-after">items per page</div>
+        </ng-template>
+      </p-paginator>
+      
+
+
+<!-- Your data rendering goes here -->
+
  </div>
