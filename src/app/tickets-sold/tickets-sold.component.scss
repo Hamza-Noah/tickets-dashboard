@@ -1,59 +1,57 @@
 .tickets-sold {
-    margin-top: 16px;
-    margin-bottom: 36px;
+  margin-top: 16px;
+  margin-bottom: 36px;
 
-    th:first-child,
-    td:first-child {
-        text-align: start;
-    }
+  th:first-child,
+  td:first-child {
+    text-align: start;
+  }
 
-    th:not(th:first-child),
-    td:not(td:first-child):not(:nth-child(2)) {
-        text-align: center;
-    }
+  th:not(th:first-child),
+  td:not(td:first-child):not(:nth-child(2)) {
+    text-align: center;
+  }
 
-    td:not(:first-child){
-        color: black;
-    }
+  td:not(:first-child) {
+    color: black;
+  }
 
+  th {
+    color: #abaab1 !important;
+    font-size: 0.83rem;
+    font-weight: normal !important;
+    border: none !important;
+  }
 
-    th {
-        color: #ABAAB1 !important;
-        font-size: 0.83rem;
-        font-weight: normal !important;
-        border: none !important;
+  .ticket-count {
+    color: #898995;
+    font-size: 0.83rem;
+  }
 
-    }
-
-
-
-    .ticket-count {
-        color: #898995;
-        font-size: 0.83rem;
-
-    }
-
-
-
+  .img img {
+    border-radius: 50%;
+  }
 }
 
 :host::ng-deep {
-    .tickets-table .p-datatable-wrapper {
-        border-radius: 8px;
-        border: 1px solid #F3F3F5;
-        overflow: hidden;
-        padding: 7px;
-        background-color: white;
-    }
+  .p-component {
+    font-family: "Neo Sans Arabic" !important;
+    font-size: 0.83rem;
+  }
 
-    .p-datatable-thead tr {
-        border-radius: 6px !important;
+  .tickets-table .p-datatable-wrapper {
+    border-radius: 8px;
+    border: 1px solid #f3f3f5;
+    overflow: hidden;
+    padding: 7px;
+    background-color: white;
+  }
 
-    }
+  .p-datatable-thead tr {
+    border-radius: 6px !important;
+  }
 
-
-
-    tbody tr:last-child td {
-        border: none !important;
-    }
+  tbody tr:last-child td {
+    border: none !important;
+  }
 }

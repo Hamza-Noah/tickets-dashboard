@@ -18,13 +18,14 @@ interface ticket {
   styleUrls: ['./tickets-sold.component.scss']
 })
 export class TicketsSoldComponent {
+  imgSrc: string = "../../assets/images/";
 
   tickets: ticket[] = [
     {
       ticketCount: 1,
-      user: { img: "Ma", name: 'Alice', phone: "0123456789" },
+      user: { img: "Ma", name: 'أحمد محمود', phone: "0123456789" },
       ticketNumber: 'C-101',  // Updated
-      ticketPrice: 10.99,
+      ticketPrice: 40,
       cinema: 'Cineplex',
       numberOfPeople: 1,
       numberOfPurchases: 'مرة واحدة',
@@ -32,9 +33,9 @@ export class TicketsSoldComponent {
     },
     {
       ticketCount: 2,
-      user: { img: "../../assets/user-1.jpg", name: 'Bob', phone: "0123456789" },
+      user: { img: "user-1.jpg", name: 'محمد الغريب', phone: "0123456789" },
       ticketNumber: 'C-102',  // Updated
-      ticketPrice: 19.99,
+      ticketPrice: 30,
       cinema: 'AMC Theatres',
       numberOfPeople: 2,
       numberOfPurchases: 'مرة واحدة',
@@ -42,9 +43,9 @@ export class TicketsSoldComponent {
     },
     {
       ticketCount: 3,
-      user: { img: "Ma", name: 'أحمد محمود', phone: "0123456789" },
+      user: { img: "user-2.jpg", name: 'محمد الغريب', phone: "0123456789" },
       ticketNumber: 'C-103',  // Updated
-      ticketPrice: 8.5,
+      ticketPrice: 45,
       cinema: 'Regal Cinemas',
       numberOfPeople: 1,
       numberOfPurchases: 'مرة واحدة',
@@ -52,15 +53,14 @@ export class TicketsSoldComponent {
     },
     {
       ticketCount: 4,
-      user: { name: 'Charlie', phone: "0123456789" },
+      user: { name: 'محمد الغريب', phone: "0123456789" },
       ticketNumber: 'C-104',  // Updated
-      ticketPrice: 8.5,
+      ticketPrice: 54,
       cinema: 'Regal Cinemas',
       numberOfPeople: 1,
       numberOfPurchases: 'مرة واحدة',
       ticket: { type: 'Matinee' },
     },
-    // Rest of the objects with updated ticketNumber values
   ];
 
 }

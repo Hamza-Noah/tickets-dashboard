@@ -18,9 +18,8 @@
                 <td>
                     <div class="d-flex justify-content-center">
 
-                        <div class="img">
-                            {{ ticket.user.img }}
-                            <img [src]="ticket.user.img" alt="">
+                        <div class="img d-flex align-items-center ms-3">
+                            <img [src]="imgSrc + ticket.user.img" alt="Ma">
                         </div>
                         <div class="user-data">
                             <p class="mb-0">
