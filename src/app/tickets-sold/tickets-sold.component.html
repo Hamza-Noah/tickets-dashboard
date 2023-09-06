@@ -37,7 +37,21 @@
                 <td data-toggle="tooltip" title="hello">{{ ticket.cinema }}</td>
                 <td>{{ ticket.numberOfPeople }}</td>
                 <td>{{ ticket.numberOfPurchases }}</td>
-                <td>{{ ticket.ticket.type }}</td>
+                <td>
+                    <div class="d-flex align-items-center">
+                        <div class="ticket-icon">
+                            <img src="../../assets/icons/ticket.svg" alt="">
+                        </div>
+                        <div class="info text-end">
+                            <p>{{ticket.ticket.ticketNumber}}</p>
+                            <p>{{ticket.ticket.file + ticket.ticket.size }}</p>
+                        
+                        </div>
+                        <div class="download">
+                            <img src="../../assets/icons/download.svg" alt="">
+                        </div>
+                    </div>
+                </td>
             </tr>
         </ng-template>
 

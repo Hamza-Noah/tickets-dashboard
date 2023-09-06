@@ -32,8 +32,8 @@
     border-radius: 50%;
   }
 
-  .number{
-    color: #92A1AD;
+  .number {
+    color: #92a1ad;
   }
 
   .no-img {
@@ -46,6 +46,32 @@
 
     &.four {
       background-color: #898e95;
+    }
+  }
+
+  .ticket-icon {
+    background: rgba(138, 116, 249, 0.1);
+    width: 31.667px;
+    height: 31.667px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7.917px;
+    margin-left: 8px;
+  }
+
+  .download {
+    margin-right: 22px;
+    img {
+      width: 16px;
+      height: 16px;
+    } 
+  }
+
+  .info{
+    font-size: 0.729rem;
+    p{
+      margin-bottom: 0;
     }
   }
 }
@@ -72,13 +98,12 @@
     border: none !important;
   }
 
-  .p-paginator.p-component{
+  .p-paginator.p-component {
     flex-direction: row-reverse;
     justify-content: start;
-
   }
 
-  p-dropdown{
+  p-dropdown {
     margin-left: auto !important;
   }
 
@@ -91,22 +116,20 @@
   .p-ripple.p-element.p-paginator-last.p-paginator-element.p-link {
     display: none !important;
   }
-  
-  .p-paginator .p-paginator-pages .p-paginator-page{
-    color: #7E8299;
+
+  .p-paginator .p-paginator-pages .p-paginator-page {
+    color: #7e8299;
     font-weight: bolder;
     outline: none !important;
     border: none !important;
   }
-    .p-paginator .p-paginator-pages .p-paginator-page.p-highlight{
-    background-color: #8A74F9;
+  .p-paginator .p-paginator-pages .p-paginator-page.p-highlight {
+    background-color: #8a74f9;
     color: white;
   }
 
   .p-datatable .p-datatable-tbody > tr > td {
-    border-color: #F3F3F5;
+    border-color: #f3f3f5;
     padding: 13px !important;
   }
-
-  
 }
