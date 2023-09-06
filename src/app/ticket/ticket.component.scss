@@ -4,10 +4,21 @@
   background-color: #8a74f9;
   background-image: url("../../assets/images/background.svg");
 
+
   h3 {
     font-size: 0.875rem;
-    font-weight: bolder;
     margin-bottom: 21px;
+  }
+
+  .trash{
+    position: absolute;
+    left: 32px;
+    top: 24px;
+    button{
+      border: none;
+      background: transparent;
+      outline: none;
+    }
   }
 
   .ticket-number {
