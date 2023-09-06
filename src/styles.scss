@@ -1,22 +1,19 @@
 @import url(../src/assets/vendor/styles/normalize.css);
 
 @font-face {
-  font-family: "Neo Sans Arabic"; // ده الإسم اللي هتستخدمه لما تحتاج تطبق الخط
+  font-family: "Neo Sans Arabic";
   src: url("./assets/fonts/NeoSansArabic.woff2") format("woff2"),
     url("./assets/fonts/NeoSansArabic.woff") format("woff");
-  // font-weight: normal;
-  // font-style: normal;
-  // font-display: swap;
 }
 
 @font-face {
-  font-family: "Neo Sans"; // ده الإسم اللي هتستخدمه لما تحتاج تطبق الخط والحجم اللي فيه
+  font-family: "Neo Sans";
   src: url("./assets/fonts/NeoSans-Medium.woff2") format("woff2"),
     url("./assets/fonts/NeoSans-Medium.woff") format("woff");
 }
 
 @font-face {
-  font-family: "NeoSansArabicMd"; // ده الإسم اللي هتستخدمه لما تحتاج تطبق الخط والحجم اللي فيه
+  font-family: "NeoSansArabicMd";
   src: url("./assets/fonts/NeoSansArabic-Medium.woff2") format("woff2"),
     url("./assets/fonts/NeoSansArabic-Medium.woff") format("woff");
 }
