@@ -22,11 +22,11 @@
                             <img *ngIf="ticket.user.img" [src]="imgSrc + ticket.user.img">
                             <span *ngIf="!ticket.user.img" class="no-img d-flex align-items-center justify-content-center text-white rounded-circle" [class.one]="ticket.ticketCount == 1" [class.four]="ticket.ticketCount == 4">Ma</span>
                         </div>
-                        <div class="user-data">
+                        <div class="user-data text-end">
                             <p class="mb-0">
                                 {{ ticket.user.name }}
                             </p>
-                            <p class="mb-0">
+                            <p class="number mb-0">
                                 {{ticket.user.phone}}
                             </p>
                         </div>
@@ -34,7 +34,7 @@
                 </td>
                 <td>{{ ticket.ticketNumber }}</td>
                 <td>${{ ticket.ticketPrice }}</td>
-                <td>{{ ticket.cinema }}</td>
+                <td data-toggle="tooltip" title="hello">{{ ticket.cinema }}</td>
                 <td>{{ ticket.numberOfPeople }}</td>
                 <td>{{ ticket.numberOfPurchases }}</td>
                 <td>{{ ticket.ticket.type }}</td>

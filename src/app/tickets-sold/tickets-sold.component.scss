@@ -32,6 +32,10 @@
     border-radius: 50%;
   }
 
+  .number{
+    color: #92A1AD;
+  }
+
   .no-img {
     width: 30px;
     height: 30px;
@@ -87,4 +91,22 @@
   .p-ripple.p-element.p-paginator-last.p-paginator-element.p-link {
     display: none !important;
   }
+  
+  .p-paginator .p-paginator-pages .p-paginator-page{
+    color: #7E8299;
+    font-weight: bolder;
+    outline: none !important;
+    border: none !important;
+  }
+    .p-paginator .p-paginator-pages .p-paginator-page.p-highlight{
+    background-color: #8A74F9;
+    color: white;
+  }
+
+  .p-datatable .p-datatable-tbody > tr > td {
+    border-color: #F3F3F5;
+    padding: 13px !important;
+  }
+
+  
 }

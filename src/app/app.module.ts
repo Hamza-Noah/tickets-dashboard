@@ -3,8 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { InputSwitchModule } from 'primeng/inputswitch';
 import { TableModule } from 'primeng/table';
 import { PaginatorModule } from 'primeng/paginator';
-
 import { FormsModule } from '@angular/forms';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { StatisticsComponent } from './statistics-use/statistics-use.component';
@@ -28,7 +28,8 @@ import { TicketNumberComponent } from './ticket-number/ticket-number.component';
     FormsModule,
     InputSwitchModule,
     TableModule,
-    PaginatorModule
+    PaginatorModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
