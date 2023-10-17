@@ -9,8 +9,9 @@
     </div>
     <div class="d-flex align-items-center">
         <div class="activated ms-3">
-        <p-inputSwitch [(ngModel)]="checked"></p-inputSwitch>
-            <label class="me-2" for="">مفعلة</label>
+            <label class="me-2" for="activated">
+                <p-inputSwitch [(ngModel)]="checked" id="activated"></p-inputSwitch>
+                مفعلة</label>
         </div>
         <a class="book-ticket text-white btn" href="#">حجز تذكرة جديدة</a>
     </div>
