@@ -5,7 +5,6 @@ import { TableModule } from 'primeng/table';
 import { PaginatorModule } from 'primeng/paginator';
 import { FormsModule } from '@angular/forms';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { StatisticsComponent } from './statistics-use/statistics-use.component';
 import { TicketComponent } from './ticket/ticket.component';
@@ -20,18 +19,16 @@ import { TicketNumberComponent } from './ticket-number/ticket-number.component';
     TicketComponent,
     TicketsBarComponent,
     TicketsSoldComponent,
-    TicketNumberComponent
+    TicketNumberComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     FormsModule,
     InputSwitchModule,
     TableModule,
     PaginatorModule,
-    
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
