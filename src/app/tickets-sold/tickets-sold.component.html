@@ -1,5 +1,5 @@
 <div class="tickets-sold">
-    <p-table class="tickets-table" [value]="tickets" [tableStyle]="{ 'min-width': '50rem' }" >
+    <p-table class="tickets-table" [value]="tickets" [tableStyle]="{ 'min-width': '50rem' }">
         <ng-template pTemplate="header">
             <tr>
                 <th>#</th>
@@ -20,7 +20,9 @@
 
                         <div class="img d-flex align-items-center ms-3">
                             <img *ngIf="ticket.user.img" [src]="imgSrc + ticket.user.img">
-                            <span *ngIf="!ticket.user.img" class="no-img d-flex align-items-center justify-content-center text-white rounded-circle" [class.one]="ticket.ticketCount == 1" [class.four]="ticket.ticketCount == 4">Ma</span>
+                            <span *ngIf="!ticket.user.img"
+                                class="no-img d-flex align-items-center justify-content-center text-white rounded-circle"
+                                [class.one]="ticket.ticketCount == 1" [class.four]="ticket.ticketCount == 4">Ma</span>
                         </div>
                         <div class="user-data text-end">
                             <p class="mb-0">
@@ -45,7 +47,7 @@
                         <div class="info text-end">
                             <p>{{ticket.ticket.ticketNumber}}</p>
                             <p>{{ticket.ticket.size}} . <span class="fw-bolder">{{ticket.ticket.file}}</span></p>
-                        
+
                         </div>
                         <div class="download">
                             <img src="../../assets/icons/download.svg" alt="">
@@ -60,14 +62,10 @@
 
     <p-paginator [rows]="10" [totalRecords]="totalRecords" [first]="first" [rowsPerPageOptions]="[5,10,20]">
         <ng-template pTemplate="rowsPerPageDropdown">
-          <div class="paginator-text-before">Rows per page:</div>
-          <p-dropdown [options]="[5, 10, 20]" [(ngModel)]="selectedRows" class="paginator-dropdown"></p-dropdown>
-          <div class="paginator-text-after">items per page</div>
+            <div class="paginator-text-before">Rows per page:</div>
+            <p-dropdown [options]="[5, 10, 20]" [(ngModel)]="selectedRows" class="paginator-dropdown"></p-dropdown>
+            <div class="paginator-text-after">items per page</div>
         </ng-template>
-      </p-paginator>
-      
-
-
-<!-- Your data rendering goes here -->
-
- </div>
+    </p-paginator>
+    
+</div>

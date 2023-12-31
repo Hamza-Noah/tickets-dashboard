@@ -12,6 +12,9 @@ import { TicketsBarComponent } from './tickets-bar/tickets-bar.component';
 import { TicketsSoldComponent } from './tickets-sold/tickets-sold.component';
 import { TicketNumberComponent } from './ticket-number/ticket-number.component';
 
+import { NgApexchartsModule } from "ng-apexcharts";
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,6 +30,7 @@ import { TicketNumberComponent } from './ticket-number/ticket-number.component';
     InputSwitchModule,
     TableModule,
     PaginatorModule,
+    NgApexchartsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
